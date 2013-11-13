@@ -1,0 +1,34 @@
+@import "compass/utilities/general/clearfix";
+
+// General Layout
+$blueprint-grid-columns: 12;
+$blueprint-grid-width: 70px;
+$blueprint-grid-margin: 18px;
+$blueprint-container-size: $blueprint-grid-columns * ($blueprint-grid-width + $blueprint-grid-margin) - $blueprint-grid-margin;
+
+$column-inner-margin: 18px;
+
+$header-height: 140px;
+
+// Main-menu
+$main-menu-height: 50px;
+$main-menu-padding: 0 19px;
+$main-menu-item-padding: 0 19px;
+$main-menu-item-margin: 0;
+// System-menu
+$system-menu-header-item-margin: 0 0 0 18px;
+$system-menu-footer-item-margin: 0 11px 0 0;
+$system-menu-footer-item-padding: 0 11px 0 0;
+
+@mixin block-layout ($columns, $last: false) {
+    @include column($columns, $last);
+    margin-bottom: $blueprint-grid-margin;
+
+    &.row-last {
+        @include last;
+    }
+
+    section {
+        margin: $column-inner-margin;
+    }
+}

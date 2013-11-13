@@ -1,0 +1,142 @@
+/**************************************************** Global elements *************************************************/
+.main-menu {
+    a, a:hover, a:active, a:visited {
+        @include typo-link-5;
+    }
+}
+
+.system-menu {
+    body > header & {
+        a, a:hover, a:active, a:visited {
+            @include typo-link-1;
+        }
+    }
+    body > footer & {
+        a, a:hover, a:active, a:visited {
+            @include typo-link-3;
+        }
+    }
+}
+
+.welcome {
+    @include typo-link-2;
+}
+
+.copyright {
+    @include typo-link-3;
+}
+
+/**************************************************** HOMEPAGE ********************************************************/
+.trips-by-destination {
+    .title {
+        font-family: "Gotham A", "Gotham B";
+        font-size: 15px;
+        font-weight: 300;
+        @include text-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
+    }
+    .descr {
+        font-family: "Gotham A", "Gotham B";
+        font-size: 12px;
+        line-height: 1.5em;
+        font-weight: 200;
+        @include text-shadow(0px 1px 2px rgba(0, 0, 0, 0.75));
+    }
+}
+
+.trips-by-type {
+    .title {
+        font-family: "Gotham A", "Gotham B";
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+.intro {
+    h1 {
+        @include typo-heading-1;
+    }
+    p {
+        @include typo-text-1;
+    }
+}
+
+/**************************************************** Inner pages *****************************************************/
+.sidebar {
+    @include typo-text-2;
+
+    h2 {
+        @include typo-heading-3;
+    }
+
+    h3 {
+        @include typo-heading-4;
+    }
+
+    nav li {
+        margin: 1em 0;
+    }
+}
+
+/**************************************************** Hotel Listing ***************************************************/
+.collection-count {
+    @include typo-heading-5;
+}
+
+.collection-pagination {
+    @include typo-heading-6;
+}
+
+.collection-sorting {
+    @include typo-heading-6;
+}
+
+.collection-listing {
+    h3 {
+        @include typo-heading-4;
+        margin-bottom: 0;
+    }
+    p {
+        @include typo-text-2;
+        line-height: 1.5em;
+        margin: 0.75em 0;
+    }
+}
+
+.price {
+    @include typo-heading-2;
+    text-transform: none;
+}
+
+.add-to-cart {
+    @include typo-link-4;
+}
+
+.item-details {
+    article {
+        @include typo-text-1;
+
+        p {
+            line-height: 1.5em;
+            margin: 0.25em 0;
+        }
+        h1 {
+            @include typo-heading-2;
+        }
+        address {
+            @include typo-heading-7;
+        }
+        h3 {
+            @include typo-heading-7;
+            margin-top: $column-inner-margin;
+            display: inline-block;
+        }
+        ul {
+            list-style-position: outside;
+            margin-left: $column-inner-margin;
+        }
+        li {
+            line-height: 1.5em;
+            margin: 0.5em 0;
+        }
+    }
+}

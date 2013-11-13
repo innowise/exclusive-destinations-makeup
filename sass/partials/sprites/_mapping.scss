@@ -1,0 +1,133 @@
+/**************************************************** Global elements *************************************************/
+body > header {
+    background: sprite($sprites, bg-header) repeat-x;
+}
+
+body > footer {
+    background: sprite($sprites, bg-footer) repeat-x;
+}
+
+.main-menu {
+    li {
+        background: url("../images/menu-right-border.png") right center no-repeat;
+
+        &.last {
+            background: none;
+        }
+    }
+}
+
+.system-menu {
+    body > footer & {
+        li {
+            background: url("../images/footer-menu-border.png") right center no-repeat;
+
+            &.last {
+                background: none;
+            }
+        }
+    }
+}
+
+/**************************************************** HOMEPAGE ********************************************************/
+.trips-by-destination {
+    .slide-title {
+        background: rgba(44, 38, 100, 0.3);
+    }
+    .slide-descr {
+        background: rgba(255, 255, 255, 0.3)
+    }
+}
+
+.trips-by-type {
+    .slide-title {
+        background: rgba(0, 0, 0, 0.15);
+    }
+}
+
+.intro {
+    background: url($intro-image) no-repeat;
+}
+
+/**************************************************** Inner Pages ********************************************************/
+.block {
+    @include block-sprite();
+}
+
+/**************************************************** Hotel Listing *******************************************************/
+.collection-controls {
+    background: sprite($sprites, bg-nav-bar) repeat-x;
+}
+.star-level.indicator {
+    background: url($star-image) repeat-x;
+}
+
+.facilities-indicator {
+    .tennis {
+        background: sprite($sprites, tennis);
+    }
+    .pool{
+        background: sprite($sprites, pool);
+    }
+    .water-sports {
+        background: sprite($sprites, water-sports);
+    }
+    .wifi {
+        background: sprite($sprites, wifi);
+    }
+    .sea {
+        background: sprite($sprites, sea);
+    }
+    .animals {
+        background: sprite($sprites, animals);
+    }
+    .no-kids {
+        background: sprite($sprites, no-kids);
+    }
+}
+.level-indicator {
+    .charme {
+        background: sprite($sprites, charme);
+    }
+    .design {
+        background: sprite($sprites, design);
+    }
+    .new {
+        background: sprite($sprites, new);
+    }
+    .family {
+        background: sprite($sprites, family);
+    }
+    .spa {
+        background: sprite($sprites, spa);
+    }
+    .golf {
+        background: sprite($sprites, golf);
+    }
+    .gastronomy {
+        background: sprite($sprites, gastronomy);
+    }
+}
+.type-indicator {
+    .charme {
+        background: sprite($sprites, charme);
+    }
+    .design {
+        background: sprite($sprites, design);
+    }
+    .new {
+        background: sprite($sprites, new);
+    }
+    .family {
+        background: sprite($sprites, family);
+    }
+    .spa {
+        background: sprite($sprites, spa);
+    }
+    .golf {
+        background: sprite($sprites, golf);
+    }
+    .gastronomy {
+        background: sprite($sprites, gastronomy);
+    }
+}

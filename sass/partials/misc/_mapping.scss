@@ -1,0 +1,17 @@
+.block {
+    @include block-misc();
+}
+
+nav ul {
+    list-style: none;
+}
+
+.collection-controls {
+    border-style: solid;
+    border-width: 1px;
+    @include border-radius(1px);
+}
+
+.gallery {
+    list-style: none;
+}

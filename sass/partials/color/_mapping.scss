@@ -1,0 +1,79 @@
+/**************************************************** Global elements *************************************************/
+.main-menu {
+    background-color: $color-3;
+
+    a, a:active, a:hover, a:visited {
+        color: $color-0;
+    }
+}
+
+.system-menu {
+    body > header & {
+        a, a:hover, a:active, a:visited {
+            color: $color-4;
+        }
+    }
+    body > footer & {
+        a, a:hover, a:active, a:visited {
+            color: $color-5;
+        }
+    }
+}
+
+/**************************************************** HOMEPAGE ********************************************************/
+.home nav {
+    a, a:hover, a:active, a:visited {
+        color: $color-0;
+    }
+}
+
+/**************************************************** Inner pages *****************************************************/
+.sidebar {
+    color: $color-4;
+
+    h2 {
+        color: $color-3;
+    }
+
+    h3 {
+        color: $color-3;
+    }
+}
+
+.block {
+    border-color: $color-7;
+    footer {
+        border-color: $color-7;
+    }
+}
+
+.collection-controls {
+    border-color: $color-7;
+}
+.collection-count {
+    color: $color-3;
+}
+.collection-pagination {
+    color: $color-3;
+}
+.collection-sorting {
+    color: $color-3;
+}
+
+.collection-listing {
+    h3 {
+        color: $color-3;
+    }
+    p {
+        color: $color-4;
+    }
+}
+
+
+.price {
+    color: $color-3;
+}
+.add-to-cart {
+    color: $color-0;
+    background: $color-3;
+}

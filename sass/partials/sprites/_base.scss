@@ -1,0 +1,18 @@
+$sprites: sprite-map("sprites/*.png",
+    $sprites-spacing: 10px,
+    $spacing: 10px,
+    $sprites-bg-footer-repeat: repeat-x,
+    $sprites-bg-header-repeat: repeat-x,
+    $sprites-bg-listing-block-footer-repeat: repeat-x,
+    $sprites-bg-nav-bar-repeat: repeat-x
+);
+
+@mixin block-sprite {
+    footer {
+        background: sprite($sprites, bg-listing-block-footer) repeat-x;
+    }
+}
+
+$intro-image: '../images/home-content.png';
+
+$star-image: '../images/star.png';

@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=latin,greek-ext,greek,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&subset=latin,latin-ext);
+
+/**************************************************** HEADINGS ********************************************************/
+// Website heading
+@mixin typo-heading-1 {
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 100;
+}
+
+// Page heading
+@mixin typo-heading-2 {
+    font-size: 20px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+// Block heading
+@mixin typo-heading-3 {
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+// Block section/article heading
+@mixin typo-heading-4 {
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    margin: 0.75em 0;
+}
+
+// Control strong label
+@mixin typo-heading-5 {
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+}
+
+// Control label
+@mixin typo-heading-6 {
+    font-size: 12px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+}
+
+// Inline label
+@mixin typo-heading-7 {
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+}
+
+/**************************************************** TEXT ************************************************************/
+// Main text
+@mixin typo-text-1 {
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    strong {
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+    }
+    em {
+        font-size: 13px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+
+// Aside text
+@mixin typo-text-2 {
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    strong {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+    }
+    em {
+        font-size: 11px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+
+// Main-part labels text
+@mixin typo-text-3 {
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    strong {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+    }
+    em {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+}
+
+/**************************************************** LINKS ***********************************************************/
+// Simple inline link
+@mixin typo-link-0 {
+    text-decoration: underline;
+}
+
+// Header system menu
+@mixin typo-link-1 {
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+// Breadcrumbs and welcome
+@mixin typo-link-2 {
+    @include typo-link-1;
+    text-transform: uppercase;
+}
+
+// Footer system menu
+@mixin typo-link-3 {
+    font-size: 11px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+// Button
+@mixin typo-link-4 {
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+// Main menu
+@mixin typo-link-5 {
+    @include typo-link-4;
+    font-size: 12px;
+}

@@ -1,0 +1,11 @@
+@mixin block-misc {
+    // To add border and not break the layout, we will change box-sizing
+    @include box-sizing(border-box);
+    border-width: 1px;
+    border-style: solid;
+
+    footer {
+        border-top-width: 1px;
+        border-top-style: solid;
+    }
+}
