@@ -333,36 +333,36 @@ body > footer {
         margin: 0 $column-inner-margin / 2 0 0;
     }
     .tennis {
-        height: image-height(sprite-file($sprites, tennis));
-        width: image-width(sprite-file($sprites, tennis));
+        height: image-height(sprite-file($sprites, facility-tennis));
+        width: image-width(sprite-file($sprites, facility-tennis));
     }
     .pool{
-        height: image-height(sprite-file($sprites, pool));
-        width: image-width(sprite-file($sprites, pool));
+        height: image-height(sprite-file($sprites, facility-pool));
+        width: image-width(sprite-file($sprites, facility-pool));
     }
     .water-sports {
-        height: image-height(sprite-file($sprites, water-sports));
-        width: image-width(sprite-file($sprites, water-sports));
+        height: image-height(sprite-file($sprites, facility-water-sports));
+        width: image-width(sprite-file($sprites, facility-water-sports));
     }
-//    .villa {
-//        height: image-height(sprite-file($sprites, villa));
-//        width: image-width(sprite-file($sprites, villa));
-//    }
+    .villa {
+        height: image-height(sprite-file($sprites, facility-villa));
+        width: image-width(sprite-file($sprites, facility-villa));
+    }
     .wifi {
-        height: image-height(sprite-file($sprites, wifi));
-        width: image-width(sprite-file($sprites, wifi));
+        height: image-height(sprite-file($sprites, facility-wifi));
+        width: image-width(sprite-file($sprites, facility-wifi));
     }
     .sea {
-        height: image-height(sprite-file($sprites, sea));
-        width: image-width(sprite-file($sprites, sea));
+        height: image-height(sprite-file($sprites, facility-sea));
+        width: image-width(sprite-file($sprites, facility-sea));
     }
     .animals {
-        height: image-height(sprite-file($sprites, animals));
-        width: image-width(sprite-file($sprites, animals));
+        height: image-height(sprite-file($sprites, facility-animals));
+        width: image-width(sprite-file($sprites, facility-animals));
     }
     .no-kids {
-        height: image-height(sprite-file($sprites, no-kids));
-        width: image-width(sprite-file($sprites, no-kids));
+        height: image-height(sprite-file($sprites, facility-no-kids));
+        width: image-width(sprite-file($sprites, facility-no-kids));
     }
 }
 
@@ -372,32 +372,32 @@ body > footer {
         margin: 0 $column-inner-margin / 2 0 0;
     }
     .charme {
-        height: image-height(sprite-file($sprites, charme));
-        width: image-width(sprite-file($sprites, charme));
+        height: image-height(sprite-file($sprites, level-charme));
+        width: image-width(sprite-file($sprites, level-charme));
     }
     .design {
-        height: image-height(sprite-file($sprites, design));
-        width: image-width(sprite-file($sprites, design));
+        height: image-height(sprite-file($sprites, level-design));
+        width: image-width(sprite-file($sprites, level-design));
     }
     .new {
-        height: image-height(sprite-file($sprites, new));
-        width: image-width(sprite-file($sprites, new));
+        height: image-height(sprite-file($sprites, level-new));
+        width: image-width(sprite-file($sprites, level-new));
     }
     .family {
-        height: image-height(sprite-file($sprites, family));
-        width: image-width(sprite-file($sprites, family));
+        height: image-height(sprite-file($sprites, level-family));
+        width: image-width(sprite-file($sprites, level-family));
     }
     .spa {
-        height: image-height(sprite-file($sprites, spa));
-        width: image-width(sprite-file($sprites, spa));
+        height: image-height(sprite-file($sprites, level-spa));
+        width: image-width(sprite-file($sprites, level-spa));
     }
     .golf {
-        height: image-height(sprite-file($sprites, golf));
-        width: image-width(sprite-file($sprites, golf));
+        height: image-height(sprite-file($sprites, level-golf));
+        width: image-width(sprite-file($sprites, level-golf));
     }
     .gastronomy {
-        height: image-height(sprite-file($sprites, gastronomy));
-        width: image-width(sprite-file($sprites, gastronomy));
+        height: image-height(sprite-file($sprites, level-gastronomy));
+        width: image-width(sprite-file($sprites, level-gastronomy));
     }
 }
 
@@ -406,33 +406,29 @@ body > footer {
         display: inline-block;
         margin: 0 $column-inner-margin / 2 0 0;
     }
-    .charme {
-        height: image-height(sprite-file($sprites, charme));
-        width: image-width(sprite-file($sprites, charme));
-    }
-    .design {
-        height: image-height(sprite-file($sprites, design));
-        width: image-width(sprite-file($sprites, design));
-    }
-    .new {
-        height: image-height(sprite-file($sprites, new));
-        width: image-width(sprite-file($sprites, new));
-    }
-    .family {
-        height: image-height(sprite-file($sprites, family));
-        width: image-width(sprite-file($sprites, family));
-    }
-    .spa {
-        height: image-height(sprite-file($sprites, spa));
-        width: image-width(sprite-file($sprites, spa));
-    }
     .golf {
-        height: image-height(sprite-file($sprites, golf));
-        width: image-width(sprite-file($sprites, golf));
+        height: image-height(sprite-file($sprites, type-golf));
+        width: image-width(sprite-file($sprites, type-golf));
     }
     .gastronomy {
-        height: image-height(sprite-file($sprites, gastronomy));
-        width: image-width(sprite-file($sprites, gastronomy));
+        height: image-height(sprite-file($sprites, type-gastronomy));
+        width: image-width(sprite-file($sprites, type-gastronomy));
+    }
+    .cruise {
+        height: image-height(sprite-file($sprites, type-cruise));
+        width: image-width(sprite-file($sprites, type-cruise));
+    }
+    .charme {
+        height: image-height(sprite-file($sprites, type-charme));
+        width: image-width(sprite-file($sprites, type-charme));
+    }
+    .wellness {
+        height: image-height(sprite-file($sprites, type-wellness));
+        width: image-width(sprite-file($sprites, type-wellness));
+    }
+    .all-in {
+        height: image-height(sprite-file($sprites, type-all-in));
+        width: image-width(sprite-file($sprites, type-all-in));
     }
 }
 

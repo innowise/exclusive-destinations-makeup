@@ -64,70 +64,67 @@ body > footer {
 
 .facilities-indicator {
     .tennis {
-        background: sprite($sprites, tennis);
+        background: sprite($sprites, facility-tennis);
     }
     .pool{
-        background: sprite($sprites, pool);
+        background: sprite($sprites, facility-pool);
     }
     .water-sports {
-        background: sprite($sprites, water-sports);
+        background: sprite($sprites, facility-water-sports);
     }
     .wifi {
-        background: sprite($sprites, wifi);
+        background: sprite($sprites, facility-wifi);
     }
     .sea {
-        background: sprite($sprites, sea);
+        background: sprite($sprites, facility-sea);
     }
     .animals {
-        background: sprite($sprites, animals);
+        background: sprite($sprites, facility-animals);
     }
     .no-kids {
-        background: sprite($sprites, no-kids);
+        background: sprite($sprites, facility-no-kids);
     }
 }
 .level-indicator {
     .charme {
-        background: sprite($sprites, charme);
+        background: sprite($sprites, level-charme);
     }
     .design {
-        background: sprite($sprites, design);
+        background: sprite($sprites, level-design);
     }
     .new {
-        background: sprite($sprites, new);
+        background: sprite($sprites, level-new);
     }
     .family {
-        background: sprite($sprites, family);
+        background: sprite($sprites, level-family);
     }
     .spa {
-        background: sprite($sprites, spa);
+        background: sprite($sprites, level-spa);
     }
     .golf {
-        background: sprite($sprites, golf);
+        background: sprite($sprites, level-golf);
     }
     .gastronomy {
-        background: sprite($sprites, gastronomy);
+        background: sprite($sprites, level-gastronomy);
     }
 }
 .type-indicator {
-    .charme {
-        background: sprite($sprites, charme);
-    }
-    .design {
-        background: sprite($sprites, design);
-    }
-    .new {
-        background: sprite($sprites, new);
-    }
-    .family {
-        background: sprite($sprites, family);
-    }
-    .spa {
-        background: sprite($sprites, spa);
-    }
     .golf {
-        background: sprite($sprites, golf);
+        background: sprite($sprites, type-golf);
     }
     .gastronomy {
-        background: sprite($sprites, gastronomy);
+        background: sprite($sprites, type-gastronomy);
+    }
+    .cruise {
+        background: sprite($sprites, type-cruise);
+    }
+    .charme {
+        background: sprite($sprites, type-charme);
+    }
+    .wellness {
+        background: sprite($sprites, type-wellness);
+    }
+    .all-in {
+        background: sprite($sprites, type-all-in);
     }
 }
