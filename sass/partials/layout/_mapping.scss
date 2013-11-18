@@ -432,6 +432,33 @@ body > footer {
     }
 }
 
+.chain-indicator {
+    span {
+        display: inline-block;
+        margin: 0 $column-inner-margin / 2 $column-inner-margin / 2 0;
+    }
+    .relais-chateaux {
+        height: image-height(sprite-file($sprites, chain-relais-chateaux));
+        width: image-width(sprite-file($sprites, chain-relais-chateaux));
+    }
+    .lhw {
+        height: image-height(sprite-file($sprites, chain-lhw));
+        width: image-width(sprite-file($sprites, chain-lhw));
+    }
+    .nieuw {
+        height: image-height(sprite-file($sprites, chain-nieuw));
+        width: image-width(sprite-file($sprites, chain-nieuw));
+    }
+    .preferred {
+        height: image-height(sprite-file($sprites, chain-preferred));
+        width: image-width(sprite-file($sprites, chain-preferred));
+    }
+    .slh {
+        height: image-height(sprite-file($sprites, chain-slh));
+        width: image-width(sprite-file($sprites, chain-slh));
+    }
+}
+
 .item-details {
     aside {
         @include column($blueprint-grid-columns * 3/4 / 2 - 1);
@@ -453,9 +480,7 @@ body > footer {
         position: relative;
     }
     .star-level {
-        position: absolute;
-        top: 0;
-        right: 0;
+        float: right;
     }
 }
 

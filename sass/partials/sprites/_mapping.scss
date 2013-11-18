@@ -128,3 +128,20 @@ body > footer {
         background: sprite($sprites, type-all-in);
     }
 }
+.chain-indicator {
+    .relais-chateaux {
+        background: sprite($sprites, chain-relais-chateaux);
+    }
+    .lhw {
+        background: sprite($sprites, chain-lhw);
+    }
+    .nieuw {
+        background: sprite($sprites, chain-nieuw);
+    }
+    .preferred {
+        background: sprite($sprites, chain-preferred);
+    }
+    .slh {
+        background: sprite($sprites, chain-slh);
+    }
+}
