@@ -10,8 +10,31 @@ nav ul {
     border-style: solid;
     border-width: 1px;
     @include border-radius(1px);
+
+    .collection-pagination {
+        a {
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
 }
 
 .gallery {
     list-style: none;
+}
+
+.sidebar {
+    nav.menu {
+        li {
+            border-style: solid;
+            border-width: 1px;
+        }
+    }
+}
+
+.cart-form {
+    input, textarea {
+        border-style: solid;
+        border-width: 1px;
+    }
 }

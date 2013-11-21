@@ -83,7 +83,7 @@
 }
 
 .collection-pagination {
-    @include typo-heading-6;
+    @include typo-heading-5;
 }
 
 .collection-sorting {
@@ -99,6 +99,9 @@
         @include typo-text-2;
         line-height: 1.5em;
         margin: 0.75em 0;
+    }
+    address {
+        @include typo-heading-7;
     }
 }
 
@@ -137,6 +140,53 @@
         li {
             line-height: 1.5em;
             margin: 0.5em 0;
+        }
+    }
+}
+
+.text {
+    article {
+        @include typo-text-1;
+
+        p {
+            line-height: 1.5em;
+            margin: 1em 0;
+            text-indent: 1em;
+        }
+        h1 {
+            @include typo-heading-2;
+        }
+        address {
+            @include typo-heading-7;
+        }
+        h3 {
+            @include typo-heading-7;
+            margin-top: $column-inner-margin;
+            display: inline-block;
+        }
+        ul {
+            list-style-position: outside;
+            margin-left: $column-inner-margin;
+            clear: both;
+        }
+        li {
+            line-height: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        img.left {
+            float: left;
+            margin: 0 $column-inner-margin $column-inner-margin 0;
+        }
+    }
+}
+
+.sidebar {
+    nav.menu {
+        a {
+            @include typo-heading-7;
+            text-transform: uppercase;
+            text-decoration: none;
         }
     }
 }

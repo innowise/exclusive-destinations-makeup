@@ -145,3 +145,7 @@ body > footer {
         background: sprite($sprites, chain-slh);
     }
 }
+
+.featured-indicator {
+    background: sprite($sprites, promo);
+}

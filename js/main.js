@@ -3,6 +3,9 @@ $(document).ready(function(){
         autoWidth: false
     });
     $(".collection-controls select").selectBoxIt({});
+    $(".cart-form select").selectBoxIt({
+        autoWidth: false
+    });
 
     $('input').iCheck({
         checkboxClass: 'icheckbox_minimal-blue',

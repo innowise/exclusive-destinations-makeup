@@ -60,27 +60,13 @@
     <div class="container">
         <nav class="collection-controls">
             <div class="collection-count">
-                3 items
+                137 items
             </div>
             <div class="collection-pagination">
-                <div class="prev"></div>
-                <div class="next"></div>
-                <div class="count">
-                    <label for="per-page">
-                        <span>Show</span>
-                        <select name="per-page" id="per-page">
-                            <option value="15">15</option>
-                            <option value="30">30</option>
-                            <option value="45">45</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-        </nav>
-        <nav class="collection-controls">
-            <div class="collection-view">
-                <a class="grid" href=""></a>
-                <a class="list" href=""></a>
+                <a class="pagination" data-page="1">1</a>
+                <a class="pagination" data-page="2">2</a>
+                <a class="pagination" data-page="3">3</a>
+                <a class="pagination" data-page="4">4</a>
             </div>
             <div class="collection-sorting">
                 <label for="sort-by">
@@ -143,7 +129,7 @@
                     <h3>Price</h3>
                     <nav>
                         <div class="layout-slider">
-                            <input id="priceFiter" type="slider" name="price" value="50;1500" />
+                            <input id="priceFiter" type="slider" name="price" value="50;1500"/>
                         </div>
                     </nav>
                 </section>
@@ -165,9 +151,10 @@
         <section class="main-area collection-listing">
             <article class="block">
                 <section>
+                    <span class="star-level indicator star-4"></span>
                     <h3>Sandton Grand Hotel Reylof</h3>
 
-                    <p>Dit stijlvolle en elegante kwaliteitshotel opende in 2011 haar deuren. De gasten voelen zich
+                    <p class="description">Dit stijlvolle en elegante kwaliteitshotel opende in 2011 haar deuren. De gasten voelen zich
                        onmiddellijk thuis in dit prestigieuze 18e eeuwse gebouw met een gezellige bar, indrukwekkende
                        wenteltrap, ruime kamers en sfeervol restaurant.</p>
 
@@ -175,33 +162,35 @@
                 </section>
                 <footer>
                     <span class="price">from € 19.95</span>
-                    <span class="star-level indicator star-4"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>
 
             <article class="block">
                 <section>
+                    <span class="star-level indicator star-5"></span>
                     <h3>Hotel Amigo</h3>
 
-                    <p>Dit stijlvolle luxehotel bevindt zich in het hartje van Brussel, vlakbij de Grote Markt. Het
+                    <p class="description">Dit stijlvolle luxehotel bevindt zich in het hartje van Brussel, vlakbij de Grote Markt. Het
                        Rocco Forte Hotel behoort tot het allerbeste van wat Brussel te bieden heeft. In het hotel
                        hangen kunstwerken van o.m. Broodthaers en Magritte.</p>
 
                     <p><img src="illustrations/image-2.jpg" alt=""/></p>
+
+                    <span class="featured-indicator"></span>
                 </section>
                 <footer>
                     <span class="price">from € 39.95</span>
-                    <span class="star-level indicator star-5"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>
 
             <article class="block row-last">
                 <section>
+                    <span class="star-level indicator star-4"></span>
                     <h3>Hotel Les Nuits</h3>
 
-                    <p>Dit unieke luxueuze en smaakvol ingerichte boetiekhotel bevindt zich in het hartje van Antwerpen
+                    <p class="description">Dit unieke luxueuze en smaakvol ingerichte boetiekhotel bevindt zich in het hartje van Antwerpen
                        op wandelafstand van de Groenplaats, musea, theaters, de winkelstraten, de Zoo…. De gasten
                        genieten er van een persoonlijke service in een gastvrije en huiselijke atmosfeer. Daarnaast kan
                        men gezellig tafelen in het bijbehorend restaurant Flamant Dining.</p>
@@ -210,32 +199,32 @@
                 </section>
                 <footer>
                     <span class="price">from € 39.95</span>
-                    <span class="star-level indicator star-4"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>
 
             <article class="block">
                 <section>
+                    <span class="star-level indicator star-5"></span>
                     <h3>Hotel Le Royal</h3>
 
-                    <p>Dit prachtige klassieke luxehotel is mede door zijn ligging grenzend aan het drukke stadscentrum
+                    <p class="description">Dit prachtige klassieke luxehotel is mede door zijn ligging grenzend aan het drukke stadscentrum
                        enerzijds, en de prachtige stadsparken anderzijds, het absolute tophotel van de stad.</p>
 
                     <p><img src="illustrations/image-4.jpg" alt=""/></p>
                 </section>
                 <footer>
                     <span class="price">from € 39.95</span>
-                    <span class="star-level indicator star-5"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>
 
             <article class="block">
                 <section>
+                    <span class="star-level indicator star-6"></span>
                     <h3>InterContinental Amstel Amsterdam</h3>
 
-                    <p>Het InterContinental Amstel Amsterdam, kortweg het Amstel hotel, staat al sinds de opening in
+                    <p class="description">Het InterContinental Amstel Amsterdam, kortweg het Amstel hotel, staat al sinds de opening in
                        1867 bekend als het meest luxueuze hotel in Nederland. Het statige gebouw is gelegen in een
                        rustig, maar centraal deel van Amsterdam, aan de oever van de Amstel.</p>
 
@@ -243,16 +232,16 @@
                 </section>
                 <footer>
                     <span class="price">from € 39.95</span>
-                    <span class="star-level indicator star-6"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>
 
             <article class="block row-last">
                 <section>
+                    <span class="star-level indicator star-6"></span>
                     <h3>Sofitel Legend The Grand Amsterdam</h3>
 
-                    <p>Dit historisch klassiek luxehotel staat voor Franse elegantie en Nederlands erfgoed in het hartje
+                    <p class="description">Dit historisch klassiek luxehotel staat voor Franse elegantie en Nederlands erfgoed in het hartje
                        van Amsterdam en ligt op korte wandelafstand van de voornaamste bezienswaardigheden zoals het
                        Van Gogh Museum, het Koninklijk Paleis op de Dam, het Anne Frank Huis, het Rijksmuseum en het
                        Hermitage.</p>
@@ -261,7 +250,6 @@
                 </section>
                 <footer>
                     <span class="price">from € 39.95</span>
-                    <span class="star-level indicator star-6"></span>
                     <a class="add-to-cart" href="#">Add to cart</a>
                 </footer>
             </article>

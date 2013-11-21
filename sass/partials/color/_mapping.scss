@@ -50,12 +50,19 @@
 .collection-controls {
     border-color: $color-7;
 }
+
 .collection-count {
     color: $color-3;
 }
+
 .collection-pagination {
-    color: $color-3;
+    a {
+        color: $color-3;
+        background: $color-9;
+        border-color: $color-10;
+    }
 }
+
 .collection-sorting {
     color: $color-3;
 }
@@ -69,11 +76,29 @@
     }
 }
 
+.cart-form {
+    input, textarea {
+        border-color: $color-7;
+    }
+}
 
 .price {
     color: $color-3;
 }
+
 .add-to-cart {
     color: $color-0;
     background: $color-3;
+}
+
+.sidebar {
+    nav.menu {
+        li {
+            background: $color-8;
+            border-color: $color-7;
+        }
+        a {
+            color: $color-2;
+        }
+    }
 }
