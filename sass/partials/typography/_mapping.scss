@@ -75,6 +75,11 @@
     nav li {
         margin: 1em 0;
     }
+
+    label.description {
+        font-size: 0.95em;
+        line-height: 1.1em;
+    }
 }
 
 /**************************************************** Hotel Listing ***************************************************/
@@ -107,11 +112,24 @@
 
 .price {
     @include typo-heading-2;
-    text-transform: none;
+
+    .hotel-listing & {
+        text-transform: none;
+        font-size: 16px;
+
+        text-align: center;
+    }
 }
 
 .add-to-cart {
     @include typo-link-4;
+}
+
+.nav-back {
+    @include typo-heading-5;
+
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .item-details {
@@ -188,5 +206,14 @@
             text-transform: uppercase;
             text-decoration: none;
         }
+    }
+}
+
+#IconDescription {
+    @include typo-text-2;
+
+    h3 {
+        @include typo-heading-5;
+        margin-bottom: 20px;
     }
 }

@@ -84,10 +84,12 @@ body > footer {
     float: left;
     height: $main-menu-height;
     padding: $main-menu-padding;
+    z-index: 10;
 
     li {
         float: left;
         height: $main-menu-height;
+        position: relative;
     }
 
     a {
@@ -97,6 +99,33 @@ body > footer {
         padding: $main-menu-item-padding;
         margin: $main-menu-item-margin;
     }
+
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: $main-menu-height;
+        overflow: hidden;
+        
+        ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        li {
+            border-top: 1px solid $color-0;
+        }
+        a {
+            width: 100%;
+            padding: 0 15px 0 20px;
+            width: 160px;
+        }
+    }
+}
+
+body > header .container {
+    overflow: visible;
 }
 
 .system-menu {
@@ -218,6 +247,12 @@ body > footer {
         vertical-align: text-bottom;
         padding-left: 5px;
     }
+    label.description {
+        margin-left: 24px;
+        width: 190px;
+        margin-bottom: 10px;
+        height: auto;
+    }
     
     nav.menu {
         li {
@@ -283,6 +318,10 @@ body > footer {
             margin-left: 10px;
             text-align: center;
         }
+
+        > span {
+            margin-left: 10px;
+        }
     }
     .collection-view {
         float: left;
@@ -313,7 +352,7 @@ body > footer {
             overflow: hidden;
         }
         address {
-            height: 48px;
+            height: 53px;
             overflow: hidden;
             display: block;
             margin-top: $column-inner-margin;
@@ -328,6 +367,7 @@ body > footer {
             .price {
                 float: left;
                 clear: both;
+                width: 65px;
             }
             .star-level {
                 float: left;
@@ -335,9 +375,9 @@ body > footer {
                 margin-top: 10px;
             }
             .add-to-cart {
-                float: left;
-                clear: both;
-                margin-top: 15px;
+                float: right;
+                clear: none;
+                margin-top: 0;
             }
         }
 
@@ -346,10 +386,6 @@ body > footer {
             top: 0;
             right: 0;
         }
-    }
-    section img {
-        width: 100%;
-        height: 205px;
     }
 
     .cart-form {
@@ -565,9 +601,9 @@ body > footer {
         margin-top: 15px;
     }
     .add-to-cart {
-        float: left;
-        clear: both;
-        margin-top: 15px;
+        float: right;
+        clear: none;
+        margin-top: 10px;
     }
 
     article {
@@ -576,6 +612,16 @@ body > footer {
     }
     .star-level {
         float: right;
+    }
+
+    .nav-back {
+        width: 100%;
+        text-align: center;
+        height: 34px;
+        line-height: 35px;
+        float: left;
+        clear: both;
+        margin-top: 20px;
     }
 }
 
@@ -591,16 +637,16 @@ body > footer {
         }
 
         img {
-            width: span(($blueprint-grid-columns * 3/4 / 2 - 1) / 3);
-            height: span(($blueprint-grid-columns * 3/4 / 2 - 1) / 3);
+//            width: span(($blueprint-grid-columns * 3/4 / 2 - 1) / 3);
+//            height: span(($blueprint-grid-columns * 3/4 / 2 - 1) / 3);
         }
 
         &.leading {
             @include column(($blueprint-grid-columns * 3/4 / 2 - 1));
 
             img {
-                width: span(($blueprint-grid-columns * 3/4 / 2 - 1));
-                height: span(($blueprint-grid-columns * 3/4 / 2 - 1));
+//                width: span(($blueprint-grid-columns * 3/4 / 2 - 1));
+//                height: span(($blueprint-grid-columns * 3/4 / 2 - 1));
             }
         }
     }
@@ -619,5 +665,36 @@ body > footer {
             width: 100%;
         }
         text-align: center;
+    }
+}
+
+#IconDescription {
+    @include container;
+
+    .column {
+        @include column($blueprint-grid-columns / 4);
+
+        &.last {
+            @include last;
+        }
+    }
+
+    span.description {
+        display: inline-block;
+        position: relative;
+        width: 130px;
+    }
+
+    .facilities-indicator span.description {
+        top: -8px;
+    }
+    .level-indicator span.description {
+        top: -24px;
+    }
+    .type-indicator span.description {
+        top: -15px;
+    }
+    .chain-indicator span.description {
+        top: -48px;
     }
 }

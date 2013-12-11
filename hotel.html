@@ -174,10 +174,12 @@
 
                 <footer>
                     <div class="level-indicator">
-                        <span class="charme"></span>
-                        <span class="design"></span>
-                        <span class="family"></span>
-                        <span class="gastronomy"></span>
+                        <a href="#IconDescription" data-target="popup">
+                            <span class="charme"></span>
+                            <span class="design"></span>
+                            <span class="family"></span>
+                            <span class="gastronomy"></span>
+                        </a>
                     </div>
 
                     <div class="facilities">
@@ -265,10 +267,64 @@
     </div>
 </footer>
 
+
+<div style="display: none;">
+    <div id="IconDescription">
+        <div class="column">
+            <h3><?= $this->translate('Facilities'); ?></h3>
+            <div class="facilities-indicator">
+                <span class="wifi"></span><span class="description"><?= $this->translate('Wi-Fi available'); ?></span><br/>
+                <span class="tennis"></span><span class="description"><?= $this->translate('Tennis courts'); ?></span><br/>
+                <span class="sea"></span><span class="description"><?= $this->translate('Sea nearby'); ?></span><br/>
+                <span class="water-sports"></span><span class="description"><?= $this->translate('Water sports'); ?></span><br/>
+                <span class="animals"></span><span class="description"><?= $this->translate('Animals allowed'); ?></span><br/>
+                <span class="pool"></span><span class="description"><?= $this->translate('Pool'); ?></span><br/>
+                <span class="no-kids"></span><span class="description"><?= $this->translate('No kids'); ?></span><br/>
+                <span class="villa"></span><span class="description"><?= $this->translate('Villa'); ?></span><br/>
+            </div>
+        </div>
+        <div class="column">
+            <h3><?= $this->translate('Level'); ?></h3>
+            <div class="level-indicator">
+                <span class="charme"></span><span class="description"><?= $this->translate('Charme'); ?></span><br/>
+                <span class="design"></span><span class="description"><?= $this->translate('Design'); ?></span><br/>
+                <span class="new"></span><span class="description"><?= $this->translate('New'); ?></span><br/>
+                <span class="family"></span><span class="description"><?= $this->translate('Family'); ?></span><br/>
+                <span class="spa"></span><span class="description"><?= $this->translate('Spa'); ?></span><br/>
+                <span class="golf"></span><span class="description"><?= $this->translate('Golf'); ?></span><br/>
+                <span class="gastronomy"></span><span class="description"><?= $this->translate('Gastronomy'); ?></span><br/>
+            </div>
+        </div>
+        <div class="column">
+            <h3><?= $this->translate('Type'); ?></h3>
+            <div class="type-indicator">
+                <span class="golf"></span><span class="description"><?= $this->translate('Golf'); ?></span><br/>
+                <span class="cruise"></span><span class="description"><?= $this->translate('Cruise'); ?></span><br/>
+                <span class="charme"></span><span class="description"><?= $this->translate('Charme'); ?></span><br/>
+                <span class="wellness"></span><span class="description"><?= $this->translate('Wellness'); ?></span><br/>
+                <span class="all-in"></span><span class="description"><?= $this->translate('All-in'); ?></span><br/>
+                <span class="gastronomy"></span><span class="description"><?= $this->translate('Gastronomy'); ?></span><br/>
+            </div>
+        </div>
+        <div class="column last">
+            <h3><?= $this->translate('Hotel chain'); ?></h3>
+            <div class="chain-indicator">
+                <span class="relais-chateaux"></span><span class="description">Relais & Châteaux </span><br/>
+                <span class="lhw"></span><span class="description">The Leading Hotels of the World</span><br/>
+                <span class="nieuw"></span><span class="description">Nieuw</span><br/>
+                <span class="slh"></span><span class="description">Small Luxury Hotels</span><br/>
+                <span class="preferred"></span><span class="description">Preferred Hotel Group</span><br/>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script src="js/libs/jquery.selectBoxIt.js"></script>
 <script src="js/libs/jquery.icheck.min.js"></script>
+<script src="js/libs/jquery.fancybox.pack.js"></script>
+<script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

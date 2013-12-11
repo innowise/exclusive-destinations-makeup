@@ -21,4 +21,10 @@ $(document).ready(function(){
         format: { format: '##.0', locale: 'de' },
         dimension: '&nbsp;&euro;'
     });
+
+    $("#priceDetailsButton").fancybox({});
+    $(".gallery a").fancybox({});
+    $("a[data-target='popup']").fancybox({});
+
+    $('body > header .main-menu').dropdownMenu();
 });

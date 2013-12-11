@@ -9,7 +9,9 @@ body > footer {
 
 .main-menu {
     li {
-        background: url("../images/menu-right-border.png") right center no-repeat;
+        background-image: url("../images/menu-right-border.png");
+        background-position: right center;
+        background-repeat: no-repeat;
 
         &.last {
             background: none;
